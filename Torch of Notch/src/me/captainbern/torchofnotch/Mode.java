@@ -24,6 +24,6 @@ package me.captainbern.torchofnotch;
 
 public enum Mode {
 	
-	Lightning, Explosion, Nuke, FireWorks, Teleport, SmallFireBall, BigFireBall, Arrow;
+	Lightning, Explosion, Nuke, FireWorks, Teleport, SmallFireBall, BigFireBall, Arrow, /*ReverseGravity*/;
 
 }

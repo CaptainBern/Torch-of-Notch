@@ -31,7 +31,9 @@ public class ArrowEffect implements Effect{
 
 	@Override
 	public void onTorchStrikeEvent(Player player) {
-		
+		/*
+		 * Tried my best to make arrows as accurate as possible...
+		 */
 		double pitch = ((player.getLocation().getPitch() + 90) * Math.PI) / 180;
 		double yaw  = ((player.getLocation().getYaw() + 90)  * Math.PI) / 180;
 

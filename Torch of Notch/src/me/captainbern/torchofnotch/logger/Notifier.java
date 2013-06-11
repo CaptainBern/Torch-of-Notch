@@ -29,7 +29,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class Notifier {
-	
+	/*
+	 * The "Mode" arg isn't used here, dunno why I left it tough...
+	 */
 	public void sendMode(Player player, Mode mode){
 		player.sendMessage(ChatColor.BLUE + "Mode: " + Main.getType(player));
 	}

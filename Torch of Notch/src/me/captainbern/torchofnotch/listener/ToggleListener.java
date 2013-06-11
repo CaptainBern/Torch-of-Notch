@@ -93,6 +93,9 @@ public class ToggleListener implements Listener {
 		}
 	}
 
+	/*
+	 * Experimental code
+	 */
 	/*public void onInteract(PlayerInteractEntityEvent event){
 		Player player = event.getPlayer();
 		Entity entity = event.getRightClicked();
