@@ -1,0 +1,19 @@
+name: Torch Of Notch
+version: 2.0
+main: me.captainbern.torchofnotch.Main
+author: CaptainBern
+
+commands:
+   notch:
+      description: Displays the help menu
+      aliases: [n]
+      permission-message: I'm sorry but you can't execute this command.
+       
+permissions:
+    torch.*:
+        description: Gives access to all torch features
+        children:
+            torch.use: true
+    torch.use:
+        description: Allows you to use the torch and his modes
+        default: op
