@@ -35,15 +35,15 @@ import org.bukkit.util.Vector;
 
 public class ReverseGravityEffect implements Effect{
 
-	private boolean state = false;
+	private boolean state;
 
 	@Override
 	public void onTorchStrikeEvent(final Player player) {
 		if(state == true){
-			state = false;
 			player.sendMessage(ChatColor.RED+ "Reversed Gravity off");
+			Bukkit.getScheduler().cancelTasks(Main.plugin);
+			state = false;
 		}else{
-			state = true;
 			player.sendMessage(ChatColor.GREEN + "Reversed Gravity on");
 			Bukkit.getScheduler().scheduleSyncRepeatingTask(Main.plugin, new Runnable(){
 				@Override
@@ -62,6 +62,7 @@ public class ReverseGravityEffect implements Effect{
 					}
 				}
 			}, 1, 1L);
+			state = true;
 		}
 	}
 
